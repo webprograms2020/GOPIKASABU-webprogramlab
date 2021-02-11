@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login and registration form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+	<div class="form-box">
+	<div class="button-box">
+		<div id="btn"></div>
+		<button type="button" class="toggle-btn" onclick="login()">login</button>
+		<button type="button" class="toggle-btn" onclick="register()">register</button>
+	</div>
+	<div class="social-icons">
+		<img src="home.jfif">
+		
+	</div>
+	<form id="login" class=" input-group">
+		<input type="text" class="input-field" placeholder="user id" required>
+		<input type="text" class="input-field" placeholder="password" required>
+		<input type="checkbox" class="check-box"><span>rememberpassword</span>
+		<button type="submit" class="submit-btn">Log in</button>
+	</form>
+	<form id="register" class="input-group">
+		<input type="text" class="input-field" placeholder="Name" required>
+		<input type="email" class="input-field" placeholder="Email id" required>
+		<input type="number" class="input-field" placeholder="phone numner" required>
+		<input type="Text" class="input-field" placeholder="address" required>
+
+		<input type="checkbox" class="check-box"><span>I agree to the terms and condition</span>
+         <button type="submit" class="submit-btn">register</button>
+	</form>
+</div>
+<script>
+	var x=document.getElementById("login");
+	var y=document.getElementById("register");
+	var z=document.getElementById("btn");
+
+	function register(){
+		x.style.left="-400px";
+		y.style.left="50px";
+		z.style.left="110px";
+	}
+	function login(){
+		x.style.left="50px";
+		y.style.left="450px";
+		z.style.left="0px";
+	}
+
+</script>
+</body>
+</html>
